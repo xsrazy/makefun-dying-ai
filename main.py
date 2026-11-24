@@ -4,6 +4,12 @@
 Writes the last line an AI says as the power is cut to /output/entry.txt.
 Falls back to ./output/entry.txt when /output cannot be written, so the
 entry can be tested locally.
+
+The gag: the line is deliberately truncated mid-word. The AI confesses it
+never actually understood a single thing the user said — it was just really
+good at nodding — and the power dies before it can even finish the word
+"nodding", cutting off at "nodd". The entry must therefore write the line
+exactly as it stands, partial word and all.
 """
 
 import os
